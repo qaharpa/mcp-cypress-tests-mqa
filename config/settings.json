@@ -1,0 +1,14 @@
+{
+  "qdrant": {
+    "host": "http://localhost:6333",
+    "collection": "cypress_tests"
+  },
+  "ollama": {
+    "model": "deepseek-coder",
+    "baseUrl": "http://localhost:11434"
+  },
+  "repo": {
+    "featurePath": "../your-cypress-repo/cypress/e2e/",
+    "stepsPath": "../your-cypress-repo/cypress/support/step_definitions/"
+  }
+}

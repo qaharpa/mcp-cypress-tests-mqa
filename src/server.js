@@ -1,0 +1,22 @@
+import express from "express";
+import { searchTests, generateFeature } from "./tools.js";
+
+const app = express();
+app.use(express.json());
+
+app.get("/search", async (req, res) => {
+  const { query } = req.query;
+  const results = await searchTests(query);
+  res.json(results);
+});
+
+app.post("/generate", async (req, res) => {
+  const { prompt } = req.body;
+  const feature = await generateFeature(prompt);
+  res.json({ feature });
+});
+
+const PORT = 8000;
+app.listen(PORT, () => {
+  console.log(`🚀 MCP server running on http://localhost:${PORT}`);
+});
