@@ -210,11 +210,11 @@ app.listen(PORT, () => {
 
     npm run bootstrap
 
-Reads .feature + .js step defs
+    Reads .feature + .js step defs
 
-Embeds with DeepSeek via Ollama
+    Embeds with DeepSeek via Ollama
 
-Stores in Qdrant
+    Stores in Qdrant
 
 2. Run MCP server
 
@@ -226,7 +226,7 @@ Stores in Qdrant
 
 4. Generate new test
 
-POST http://localhost:8000/generate
+    POST http://localhost:8000/generate
 {
   "prompt": "Write a feature for password reset via email"
 }
