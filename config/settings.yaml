@@ -1,0 +1,12 @@
+qdrant:
+  host: "localhost"
+  port: 6333
+  collection: "cypress_tests"
+
+ollama:
+  model: "deepseek-coder"
+  base_url: "http://localhost:11434"
+
+repo:
+  feature_path: "../your-cypress-repo/cypress/e2e/"
+  steps_path: "../your-cypress-repo/cypress/support/step_definitions/"
