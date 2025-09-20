@@ -10,5 +10,9 @@
   "repo": {
     "featurePath": "../your-cypress-repo/cypress/e2e/",
     "stepsPath": "../your-cypress-repo/cypress/support/step_definitions/"
+  },
+  "slack": {
+    "token": "xoxb-XXXXXXXXXXXX",   
+    "channel": "#qa-team"           
   }
 }
