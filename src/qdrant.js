@@ -1,5 +1,5 @@
 import { QdrantClient } from "@qdrant/js-client-rest";
-import settings from "../config/settings.json" assert { type: "json" };
+import settings from "../config/settings.json" with { type: "json" };
 
 const client = new QdrantClient({ url: settings.qdrant.host });
 

@@ -1,4 +1,4 @@
-import settings from "../config/settings.json" assert { type: "json" };
+import settings from "../config/settings.json" with { type: "json" };
 import { loadFeatureFiles, loadStepDefinitions } from "./ingestion.js";
 import { embedDocuments } from "./embeddings.js";
 import { ensureCollection, upsertDocs } from "./qdrant.js";

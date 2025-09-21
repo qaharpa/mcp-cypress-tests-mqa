@@ -1,5 +1,5 @@
 import { WebClient } from "@slack/web-api";
-import settings from "../config/settings.json" assert { type: "json" };
+import settings from "../config/settings.json" with  { type: "json" };
 
 // Initialize Slack client
 const slackClient = new WebClient(settings.slack.token);

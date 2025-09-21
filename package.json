@@ -1,5 +1,5 @@
 {
-  "name": "mcp-cypress-tests-js",
+  "name": "mcp-cypress-tests",
   "version": "1.0.0",
   "type": "module",
   "main": "src/server.js",
@@ -8,9 +8,24 @@
     "bootstrap": "node src/bootstrap.js"
   },
   "dependencies": {
-    "@qdrant/js-client-rest": "^1.8.0",
-    "axios": "^1.6.7",
-    "express": "^4.18.2",
+    "@qdrant/js-client-rest": "^1.15.1",
+    "@slack/web-api": "^7.10.0",
+    "@slack/webhook": "^7.0.6",
+    "axios": "^1.12.2",
+    "body-parser": "^2.2.0",
+    "express": "^4.21.2",
     "glob": "^10.3.10"
-  }
+  },
+  "description": "📂 File Tree\r mcp-cypress-tests-js/\r ├── config/\r │   └── settings.json\r ├── src/\r │   ├── server.js          # Express MCP server\r │   ├── ingestion.js       # Load .feature + .js files\r │   ├── embeddings.js      # Generate embeddings\r │   ├── qdrant.js          # Qdrant client\r │   ├── llm.js             # Ollama wrapper\r │   ├── tools.js           # Search + generation logic\r │   └── bootstrap.js       # Initial indexing pipeline\r ├── package.json\r └── README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qaharpa/mcp-cypress-tests-mqa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qaharpa/mcp-cypress-tests-mqa/issues"
+  },
+  "homepage": "https://github.com/qaharpa/mcp-cypress-tests-mqa#readme"
 }

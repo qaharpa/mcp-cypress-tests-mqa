@@ -11,6 +11,14 @@ app.get("/search", async (req, res) => {
   res.json(results);
 });
 
+app.get('/health', (req, res) => {
+  res.status(200).json({ 
+    status: 'OK', 
+    timestamp: new Date().toISOString(),
+    uptime: process.uptime()
+  });
+});
+
 app.post("/generate", async (req, res) => {
   const { prompt } = req.body;
   const feature = await generateFeature(prompt);

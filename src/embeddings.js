@@ -1,5 +1,5 @@
 import axios from "axios";
-import settings from "../config/settings.json" assert { type: "json" };
+import settings from "../config/settings.json" with { type: "json" };
 
 export async function embedText(text) {
   const response = await axios.post(`${settings.ollama.baseUrl}/api/embeddings`, {
