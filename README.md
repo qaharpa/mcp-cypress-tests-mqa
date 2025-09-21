@@ -39,3 +39,8 @@ mcp-cypress-tests-js/
 {
   "prompt": "Write a feature for password reset via email"
 }
+
+
+curl -X POST http://localhost:8000/generate ^
+  -H "Content-Type: application/json" ^
+  -d "{\"prompt\":\"Create a login feature\"}"
